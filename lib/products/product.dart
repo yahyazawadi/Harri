@@ -1,14 +1,19 @@
 abstract class Product {
+  String id;
   String name;
   double price;
   int quantity;
   String category;
-
+  String? manufacturer;
+  String? description;
   Product({
+    required this.id,
     required this.name,
     required this.price,
     required this.quantity,
     required this.category,
+    this.manufacturer,
+    this.description,
   }) {
     if (price < 0) {
       throw ArgumentError('Price cannot be negative');
@@ -45,4 +50,5 @@ abstract class Product {
   }
 
   String listingInfo();
+  Product create();
 }

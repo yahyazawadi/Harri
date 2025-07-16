@@ -9,7 +9,6 @@ class Shoe extends Product {
   final String? color;
 
   Shoe({
-    required super.id,
     required super.name,
     required super.price,
     required super.quantity,
@@ -28,7 +27,7 @@ class Shoe extends Product {
   @override
   String listingInfo() {
     return '''
-Shoe: $name (ID: $id)
+Shoe: $name
 - Price: \$${price.toStringAsFixed(2)} (After discount: \$${finalPrice().toStringAsFixed(2)})
 - Size: $size
 - Type: ${type.name}
@@ -41,7 +40,6 @@ ${description != null ? '- Description: $description' : ''}
 
   static Shoe create() {
     print('\n=== Add New Shoe ===');
-    final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Shoe name: ');
     final price = double.parse(Prompt.enter('Price: '));
     final quantity = int.parse(Prompt.enter('Initial stock quantity: '));
@@ -62,7 +60,6 @@ ${description != null ? '- Description: $description' : ''}
     );
 
     return Shoe(
-      id: id,
       name: name,
       price: price,
       quantity: quantity,

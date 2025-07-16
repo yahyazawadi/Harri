@@ -14,7 +14,6 @@ class Shirt extends Product {
   final String? color;
 
   Shirt({
-    required super.id,
     required super.name,
     required super.price,
     required super.quantity,
@@ -34,7 +33,7 @@ class Shirt extends Product {
   @override
   String listingInfo() {
     return '''
-Shirt: $name (ID: $id)
+Shirt: $name
 - Price: \$${price.toStringAsFixed(2)} (After discount: \$${finalPrice().toStringAsFixed(2)})
 - Size: ${size.name.toUpperCase()}
 - Sleeve Type: ${sleeveType.name}
@@ -48,7 +47,6 @@ ${description != null ? '- Description: $description' : ''}
 
   static Shirt create() {
     print('\n=== Add New Shirt ===');
-    final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Shirt name: ');
     final price = double.parse(Prompt.enter('Price: '));
     final quantity = int.parse(Prompt.enter('Initial stock quantity: '));
@@ -74,7 +72,6 @@ ${description != null ? '- Description: $description' : ''}
     );
 
     return Shirt(
-      id: id,
       name: name,
       price: price,
       quantity: quantity,

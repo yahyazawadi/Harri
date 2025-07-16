@@ -1,5 +1,4 @@
 abstract class Product {
-  String id;
   String name;
   double price;
   int quantity;
@@ -7,7 +6,6 @@ abstract class Product {
   String? manufacturer;
   String? description;
   Product({
-    required this.id,
     required this.name,
     required this.price,
     required this.quantity,

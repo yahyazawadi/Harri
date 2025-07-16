@@ -10,7 +10,6 @@ class Headphone extends Product {
   final String? color;
 
   Headphone({
-    required super.id,
     required super.name,
     required super.price,
     required super.quantity,
@@ -40,7 +39,7 @@ class Headphone extends Product {
   @override
   String listingInfo() {
     return '''
-Headphone: $name (ID: $id)
+Headphone: $name 
 - Connectivity: ${connectivityType.toString().split('.').last}
   (After discount: \$${finalPrice().toStringAsFixed(2)})
 - Connectivity: $connectivityType
@@ -56,7 +55,6 @@ ${description != null ? '- Description: $description' : ''}
   static Headphone create() {
     print('\n=== Add New Headphone ===');
 
-    final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Product name: ');
     final price = double.parse(Prompt.enter('Price: '));
     final quantity = int.parse(Prompt.enter('Initial stock quantity: '));
@@ -90,7 +88,6 @@ ${description != null ? '- Description: $description' : ''}
     final description = Prompt.enter('Description (leave blank if none): ');
 
     return Headphone(
-      id: id,
       name: name,
       price: price,
       quantity: quantity,

@@ -11,7 +11,6 @@ class Keyboard extends Product {
   final String? languages;
 
   Keyboard({
-    required super.id,
     required super.name,
     required super.price,
     required super.quantity,
@@ -41,7 +40,7 @@ class Keyboard extends Product {
   @override
   String listingInfo() {
     return '''
-Keyboard: $name (ID: $id)
+Keyboard: $name
 - Price: \$${price.toStringAsFixed(2)} 
   (After discount: \$${finalPrice().toStringAsFixed(2)})
 - Switch Type: $switchType
@@ -57,7 +56,6 @@ ${description != null ? '- Description: $description' : ''}
   static Keyboard create() {
     print('\n=== Add New Keyboard ===');
 
-    final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Product name: ');
     final price = double.parse(Prompt.enter('Price: '));
     final quantity = int.parse(Prompt.enter('Initial stock quantity: '));
@@ -91,7 +89,6 @@ ${description != null ? '- Description: $description' : ''}
     final description = Prompt.enter('Description (leave blank if none): ');
 
     return Keyboard(
-      id: id,
       name: name,
       price: price,
       quantity: quantity,

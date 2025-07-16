@@ -23,6 +23,8 @@ abstract class Product {
     }
   }
 
+  String listingInfo();
+  Product create();
   double discount();
   double finalPrice() {
     return price - discount();
@@ -48,7 +50,4 @@ abstract class Product {
     quantity += amount;
     print('$name quantity increased by $amount. New quantity: $quantity');
   }
-
-  String listingInfo();
-  Product create();
 }

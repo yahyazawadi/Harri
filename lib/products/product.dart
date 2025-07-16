@@ -24,7 +24,6 @@ abstract class Product {
   }
 
   String listingInfo();
-  Product create();
   double discount();
   double finalPrice() {
     return price - discount();

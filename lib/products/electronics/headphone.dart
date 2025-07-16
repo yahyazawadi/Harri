@@ -1,5 +1,5 @@
 import 'package:online_store/products/product.dart';
-import 'package:online_store/products/prompt.dart';
+import 'package:online_store/prompt.dart';
 
 enum ConnectivityType { wired, wireless, hybrid }
 
@@ -53,8 +53,7 @@ ${description != null ? '- Description: $description' : ''}
 ''';
   }
 
-  @override
-  Headphone create() {
+  static Headphone create() {
     print('\n=== Add New Headphone ===');
 
     final id = DateTime.now().millisecondsSinceEpoch.toString();

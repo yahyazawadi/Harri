@@ -1,5 +1,5 @@
 import 'package:online_store/products/product.dart';
-import 'package:online_store/products/prompt.dart';
+import 'package:online_store/prompt.dart';
 
 enum ShoeType { sneakers, boots, sandals, formal }
 
@@ -18,7 +18,7 @@ class Shoe extends Product {
     this.color,
     super.manufacturer,
     super.description,
-  }) : super(category: 'Footwear');
+  }) : super(category: 'clothes');
 
   @override
   double discount() {
@@ -39,8 +39,7 @@ ${description != null ? '- Description: $description' : ''}
 ''';
   }
 
-  @override
-  Shoe create() {
+  static Shoe create() {
     print('\n=== Add New Shoe ===');
     final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Shoe name: ');

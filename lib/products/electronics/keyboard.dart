@@ -1,5 +1,5 @@
 import 'package:online_store/products/product.dart';
-import 'package:online_store/products/prompt.dart';
+import 'package:online_store/prompt.dart';
 
 enum SwitchType { mechanical, membrane, optical }
 
@@ -54,8 +54,7 @@ ${description != null ? '- Description: $description' : ''}
 ''';
   }
 
-  @override
-  Keyboard create() {
+  static Keyboard create() {
     print('\n=== Add New Keyboard ===');
 
     final id = DateTime.now().millisecondsSinceEpoch.toString();

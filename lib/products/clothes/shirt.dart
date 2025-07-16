@@ -1,5 +1,5 @@
 import 'package:online_store/products/product.dart';
-import 'package:online_store/products/prompt.dart';
+import 'package:online_store/prompt.dart';
 
 enum ShirtSize { xs, s, m, l, xl, xxl }
 
@@ -24,7 +24,7 @@ class Shirt extends Product {
     this.color,
     super.manufacturer,
     super.description,
-  }) : super(category: 'Clothing');
+  }) : super(category: 'clothes');
 
   @override
   double discount() {
@@ -46,8 +46,7 @@ ${description != null ? '- Description: $description' : ''}
 ''';
   }
 
-  @override
-  Shirt create() {
+  static Shirt create() {
     print('\n=== Add New Shirt ===');
     final id = DateTime.now().millisecondsSinceEpoch.toString();
     final name = Prompt.enter('Shirt name: ');

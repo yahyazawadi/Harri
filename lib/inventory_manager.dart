@@ -41,7 +41,7 @@ class InventoryManager<T extends Product> {
     }
   }
 
-  //Data handling methods
+  //STOCK HANDLING METHODS
   void decreaseStockForOrder(String productName, int amount) {
     final product = getProduct(productName);
     if (product == null) {

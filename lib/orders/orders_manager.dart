@@ -57,7 +57,7 @@ class OrderManager {
     _createdAt = null;
   }
 
-  // INTERACTIVE Methods
+  // INTERACTIVE METHODS
   void addToOrderInteractive() {
     if (_inventory.products.isEmpty) {
       print('! No products available');

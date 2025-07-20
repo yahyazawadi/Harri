@@ -1,7 +1,5 @@
 import 'package:online_store/prompt.dart';
-import 'package:online_store/factory.dart';
 import 'package:online_store/inventory_manager.dart';
-import 'package:online_store/orders/order_item.dart';
 import 'package:online_store/orders/orders_manager.dart';
 import 'package:online_store/products/product.dart';
 
@@ -39,13 +37,13 @@ void main() {
           inventory.listProducts();
           break;
         case '3':
-          inventory.restockProduct();
+          inventory.restockProductInteractive();
           break;
         case '4':
-          inventory.reduceStock();
+          inventory.reduceStockInteractive();
           break;
         case '5':
-          inventory.removeProduct();
+          inventory.removeProductInteractive();
           break;
         case '0':
           return;
@@ -80,10 +78,10 @@ ${hasItems ? 'Total: \$${orderManager.orderTotal.toStringAsFixed(2)}\n' : ''}
           orderManager.removeAtInteractive();
           break;
         case '3':
-          orderManager.checkout();
+          orderManager.checkoutInteractive();
           break;
         case '4':
-          orderManager.cancelOrder();
+          orderManager.cancelOrderInteractive();
           break;
         case '0':
           return;

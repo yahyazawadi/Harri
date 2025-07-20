@@ -40,7 +40,6 @@ class Headphone extends Product {
   String listingInfo() {
     return '''
 Headphone: $name 
-- Connectivity: ${connectivityType.toString().split('.').last}
 - Price: \$${price.toStringAsFixed(2)}
   (After discount: \$${finalPrice().toStringAsFixed(2)})
 - Connectivity: ${connectivityType.name}

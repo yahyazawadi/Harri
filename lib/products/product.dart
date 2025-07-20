@@ -1,34 +1,45 @@
 abstract class Product {
   String name;
-  double price;
-  int quantity;
   String category;
   String? manufacturer;
   String? description;
+  late double _price;
+  late int _quantity;
+
+  double get price => _price;
+  set price(double value) {
+    if (value < 0) throw ArgumentError('Price cannot be negative');
+    _price = value;
+  }
+
+  int get quantity => _quantity;
+  set quantity(int value) {
+    if (value < 0) throw ArgumentError('Quantity cannot be negative');
+    _quantity = value;
+  }
+
+  //initializer
   Product({
     required this.name,
-    required this.price,
-    required this.quantity,
+    required double price,
+    required int quantity,
     required this.category,
     this.manufacturer,
     this.description,
   }) {
-    if (price < 0) {
-      throw ArgumentError('Price cannot be negative');
-    }
-    if (quantity < 0) {
-      throw ArgumentError('Quantity cannot be negative');
-    }
+    this._price = price;
+    this._quantity = quantity;
   }
-
+  //abstract methods
+  double discount();
   String listingInfo();
+  //concrete methods
   String listingInfoForStocking() {
     return '''
     Product: $name
     stock: $quantity''';
   }
 
-  double discount();
   double finalPrice() {
     return price - discount();
   }

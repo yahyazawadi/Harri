@@ -226,7 +226,7 @@ class InventoryManager<T extends Product> {
 
   void reduceStockInteractive() {
     if (_products.isEmpty) {
-      print('! No products available to reduce');
+      print('No products available to reduce');
       return;
     }
 

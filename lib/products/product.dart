@@ -54,7 +54,7 @@ abstract class Product {
       );
     }
     quantity -= amount;
-    print("Quantity decreased by $amount. New quantity: $quantity");
+    print("$name quantity decreased by $amount. New quantity: $quantity");
   }
 
   increaseQuantity(int amount) {

@@ -28,7 +28,8 @@ class Shoe extends Product {
   String listingInfo() {
     return '''
 Shoe: $name
-- Price: \$${price.toStringAsFixed(2)} (After discount: \$${finalPrice().toStringAsFixed(2)})
+- Price: \$${price.toStringAsFixed(2)} 
+(After discount: \$${finalPrice().toStringAsFixed(2)})
 - Size: $size
 - Type: ${type.name}
 - Color: ${color ?? 'Not specified'}

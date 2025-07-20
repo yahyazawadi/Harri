@@ -72,7 +72,6 @@ ${description != null ? '- Description: $description' : ''}
     } else if (switchTypeInput == 'optical') {
       switchType = SwitchType.optical;
     } else {
-      // Default to mechanical if input doesn't match
       switchType = SwitchType.mechanical;
     }
 

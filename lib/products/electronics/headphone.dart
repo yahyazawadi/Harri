@@ -41,8 +41,9 @@ class Headphone extends Product {
     return '''
 Headphone: $name 
 - Connectivity: ${connectivityType.toString().split('.').last}
+- Price: \$${price.toStringAsFixed(2)}
   (After discount: \$${finalPrice().toStringAsFixed(2)})
-- Connectivity: $connectivityType
+- Connectivity: ${connectivityType.name}
 - Noise Cancellation: ${hasNoiseCancellation ? 'Yes' : 'No'}
 - Driver Size: ${driverSize}mm
 - Color: ${color ?? 'Not specified'}

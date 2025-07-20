@@ -34,7 +34,8 @@ class Shirt extends Product {
   String listingInfo() {
     return '''
 Shirt: $name
-- Price: \$${price.toStringAsFixed(2)} (After discount: \$${finalPrice().toStringAsFixed(2)})
+- Price: \$${price.toStringAsFixed(2)} 
+(After discount: \$${finalPrice().toStringAsFixed(2)})
 - Size: ${size.name.toUpperCase()}
 - Sleeve Type: ${sleeveType.name}
 - Fit: ${fit.name}

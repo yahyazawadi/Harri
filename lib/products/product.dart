@@ -22,6 +22,12 @@ abstract class Product {
   }
 
   String listingInfo();
+  String listingInfoForStocking() {
+    return '''
+    Product: $name
+    stock: $quantity''';
+  }
+
   double discount();
   double finalPrice() {
     return price - discount();

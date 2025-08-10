@@ -1,0 +1,201 @@
+[
+    {
+        "name": "Amadeus",
+        "isOnline": true,
+        "slots": [
+            {
+                "day": "Monday",
+                "time": "10:00 AM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "2:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "2:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "2:30 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+        "name": "Lina",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Tuesday",
+                "time": "11:00 AM"
+            },
+            {
+                "day": "Thursday",
+                "time": "1:45 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+        "name": "Omar",
+        "isOnline": true,
+        "slots": [],
+        "avatarURL": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+        "name": "Sara",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Sunday",
+                "time": "12:00 PM"
+            },
+            {
+                "day": "Friday",
+                "time": "3:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "time": "1:00 PM"
+            },
+            {
+                "day": "Saturday",
+                "time": "6:00 PM"
+            },
+            {
+                "day": "Saturday",
+                "time": "10:00 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+        "name": "Shehab",
+        "isOnline": true,
+        "slots": [
+            {
+                "day": "Monday",
+                "time": "10:00 AM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "2:30 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+        "name": "Lina",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Tuesday",
+                "time": "11:00 AM"
+            },
+            {
+                "day": "Thursday",
+                "time": "1:45 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=6"
+    },
+    {
+        "name": "Omar",
+        "isOnline": true,
+        "slots": [],
+        "avatarURL": "https://i.pravatar.cc/150?img=7"
+    },
+    {
+        "name": "Sara",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Sunday",
+                "time": "12:00 PM"
+            },
+            {
+                "day": "Friday",
+                "time": "3:30 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=18"
+    },
+    {
+        "name": "Shehab",
+        "isOnline": true,
+        "slots": [
+            {
+                "day": "Monday",
+                "time": "10:00 AM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "2:30 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+        "name": "Lina",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Tuesday",
+                "time": "11:00 AM"
+            },
+            {
+                "day": "Thursday",
+                "time": "1:45 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=6"
+    },
+    {
+        "name": "Omar",
+        "isOnline": true,
+        "slots": [],
+        "avatarURL": "https://i.pravatar.cc/150?img=7"
+    },
+    {
+        "name": "Sara",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Sunday",
+                "time": "12:00 PM"
+            },
+            {
+                "day": "Friday",
+                "time": "3:30 PM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+        "name": "Ali",
+        "isOnline": true,
+        "slots": [
+            {
+                "day": "Monday",
+                "time": "8:15 AM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=8"
+    },
+    {
+        "name": "Noor",
+        "isOnline": false,
+        "slots": [
+            {
+                "day": "Wednesday",
+                "time": "2:00 PM"
+            },
+            {
+                "day": "Saturday",
+                "time": "11:30 AM"
+            }
+        ],
+        "avatarURL": "https://i.pravatar.cc/150?img=9"
+    }
+]
